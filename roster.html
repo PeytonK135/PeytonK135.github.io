@@ -12,13 +12,19 @@
     <img src="https://assets.onecompiler.app/42prgza9b/42prk3tku/transparent%20GCEMS.png" alt="GCEMS Logo" class="logo" style="position: static; max-height: 80px;">
   </div>
 
-  <!-- Password Box Styled Like Your Existing Content Boxes -->
-  <section style="max-width: 600px; margin: 40px auto; text-align: center;">
-    <h2>Employee Roster Access</h2>
-    <p>Please enter the password to view the roster.</p>
-    <input type="password" id="password" placeholder="Enter Password" style="width: 100%; padding: 14px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #ccc;">
-    <button onclick="checkPassword()" class="button" style="width: 100%;">Access Roster</button>
-    <p id="error-message" style="color: red; margin-top: 10px;"></p>
+  <!-- Password Box -->
+  <section style="max-width: 400px; margin: 40px auto; padding: 30px 20px; text-align: center;">
+    <h2 style="font-size: 1.8rem;">Employee Roster Access</h2>
+    <p style="font-size: 1rem;">Please enter the password to view the roster.</p>
+
+    <!-- Matching width input and button -->
+    <div style="width: 100%; display: flex; flex-direction: column; gap: 15px;">
+      <input type="password" id="password" placeholder="Enter Password"
+             style="width: 100%; padding: 12px; font-size: 1rem; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box;">
+      <button onclick="checkPassword()" class="button" style="width: 100%;">Access Roster</button>
+    </div>
+
+    <p id="error-message" style="color: red; margin-top: 15px;"></p>
   </section>
 
   <script src="script.js"></script>
