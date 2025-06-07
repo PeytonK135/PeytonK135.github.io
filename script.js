@@ -24,7 +24,7 @@ function checkPassword() {
     const error = document.getElementById("error-message");
 
     if (input === correctPassword) {
-        window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRx-AIhyl6KLeLugXpNGPcumprO_1t_8WZ7uQXSg6HM3I6Hs_IqnO6WYRPX_EkcOXyOfNC9XeOzji82/pubhtml?gid=0&single=true"; 
+        window.location.href = "https://docs.google.com/spreadsheets/d/1Kd9Tp0cfQwc4Ea0gjzFdYGWnT2Odt9owfs_lucfd6GA/edit?usp=sharing"; 
     } else {
         error.textContent = "Incorrect password. Please try again.";
     }
