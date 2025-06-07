@@ -19,12 +19,12 @@ function showSlides() {
 
 // Password protection for employee roster redirect
 function checkPassword() {
-    const correctPassword = "gcems2025"; // Change this to your chosen password
+    const correctPassword = "Garrard2025!"; // Change this to your chosen password
     const input = document.getElementById("password").value;
     const error = document.getElementById("error-message");
 
     if (input === correctPassword) {
-        window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEXAMPLEURL/pubhtml"; // Replace with your Google Sheets published URL
+        window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRx-AIhyl6KLeLugXpNGPcumprO_1t_8WZ7uQXSg6HM3I6Hs_IqnO6WYRPX_EkcOXyOfNC9XeOzji82/pubhtml?gid=0&single=true"; 
     } else {
         error.textContent = "Incorrect password. Please try again.";
     }
