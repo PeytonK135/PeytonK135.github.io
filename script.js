@@ -16,3 +16,16 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 8 seconds
 }
+
+// Password protection for employee roster redirect
+function checkPassword() {
+    const correctPassword = "gcems2025"; // Change this to your chosen password
+    const input = document.getElementById("password").value;
+    const error = document.getElementById("error-message");
+
+    if (input === correctPassword) {
+        window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEXAMPLEURL/pubhtml"; // Replace with your Google Sheets published URL
+    } else {
+        error.textContent = "Incorrect password. Please try again.";
+    }
+}
