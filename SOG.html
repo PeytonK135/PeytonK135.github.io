@@ -15,18 +15,80 @@
     <meta property="og:type" content="website" />
 
     <style>
-  .content iframe {
-      display: block;        /* makes sure it starts on a new line */
-      width: 100vw;          /* spans the full viewport width */
-      max-width: 100%;       /* never exceeds its container on small screens */
-      height: 90vh;          /* keeps the tall view you wanted */
-      border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      margin: 20px 0;        /* top/bottom spacing */
-  }
-</style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
 
+        .header-container {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #004080;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover,
+        nav ul li:hover > a {
+            background-color: #003366;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #004080;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content iframe {
+            display: block;
+            width: 100%;
+            height: 90vh;
+            max-width: 1000px;
+            margin: 20px auto;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #eee;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -65,9 +127,9 @@
 
 <div class="content">
     <h2>Standard Operating Guidelines</h2>
-    <p>Below is the most current version of our SOGs, embedded directly from our cloud drive for ease of access and updates.</p>
+    <p>Below is the most current version of our SOGs, embedded directly from our system for ease of access and updates.</p>
 
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vS9jPZDMzwmMY-d16FCt-cNLv1QX-pIl6-CCsP5o1e1ajDoN2bVoLJFQZpDlCiJXXXW6k63Be2wUaFk/pub?embedded=true"></iframe>
+    <iframe src="SOG.pdf#toolbar=0"></iframe>
 </div>
 
 <footer>
